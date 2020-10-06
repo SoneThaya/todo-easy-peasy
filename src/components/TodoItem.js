@@ -1,8 +1,8 @@
 import React from "react";
-import { useActions } from "easy-peasy";
+import { useStoreActions } from "easy-peasy";
 
 const TodoItem = ({ todo }) => {
-  const { remove, toggle } = useActions((actions) => ({
+  const { remove, toggle } = useStoreActions((actions) => ({
     remove: actions.remove,
     toggle: actions.toggle,
   }));

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useActions } from "easy-peasy";
+import { useStoreActions } from "easy-peasy";
 
 const AddTodo = () => {
   const [title, setTitle] = useState("");
 
-  const add = useActions((actions) => actions.add);
+  const add = useStoreActions((actions) => actions.add);
 
   return (
     <div>
